@@ -54,9 +54,3 @@ Users can connect their Freighter wallet, place a bid using testnet XLM, confirm
 - Soroban / Stellar Smart Contract
 - Stellar Testnet
 
-## Setup Instructions
-
-Clone the repository:
-
-```bash
-git clone YOUR_GITHUB_REPO_LINK

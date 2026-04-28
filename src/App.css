@@ -1,0 +1,354 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f6fb;
+  color: #102033;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 16px;
+}
+
+.card {
+  width: 100%;
+  max-width: 980px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.12);
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.badge {
+  display: inline-block;
+  margin: 0 0 12px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #e8f2ff;
+  color: #1357b8;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.status-pill {
+  margin: 0 0 12px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: capitalize;
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.status-pill.pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-pill.success {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-pill.failed {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+h1 {
+  margin: 0;
+  font-size: 42px;
+  text-align: center;
+}
+
+.description {
+  margin: 12px auto 28px;
+  max-width: 760px;
+  color: #5d6b7a;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.auction-hero {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  padding: 24px;
+  border-radius: 20px;
+  background: #f8fafc;
+  border: 1px solid #e5eaf0;
+}
+
+.item-image {
+  width: 132px;
+  height: 132px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #e8f2ff, #dbeafe);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 56px;
+  flex-shrink: 0;
+}
+
+.item-content {
+  flex: 1;
+}
+
+.item-content h2 {
+  margin: 0 0 8px;
+}
+
+.item-content p {
+  margin: 0;
+  color: #5d6b7a;
+  line-height: 1.5;
+}
+
+.label,
+.section-title {
+  margin: 0 0 8px;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.auction-time {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+  padding: 12px 16px;
+  border-radius: 16px;
+  background: #e8f2ff;
+  color: #1357b8;
+}
+
+.auction-time span {
+  font-weight: 700;
+}
+
+.auction-time strong {
+  font-size: 22px;
+}
+
+.auction-time.ended {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.auction-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.auction-stats div {
+  padding: 20px;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid #e5eaf0;
+  text-align: center;
+}
+
+.auction-stats p {
+  margin: 0 0 8px;
+  color: #64748b;
+  font-weight: 700;
+}
+
+.auction-stats strong {
+  font-size: 22px;
+}
+
+.highest-bidder,
+.wallet-options,
+.wallet-box,
+.bid-box,
+.status-box,
+.contract-box,
+.history-box,
+.activity-box {
+  padding: 20px;
+  border-radius: 18px;
+  border: 1px solid #e5eaf0;
+  margin-top: 16px;
+  background: #ffffff;
+}
+
+.highest-bidder p {
+  margin: 0;
+  word-break: break-word;
+}
+
+.wallet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+.wallet-option {
+  background: white;
+  color: #102033;
+  border: 1px solid #cbd5e1;
+}
+
+.wallet-option:hover {
+  background: #f8fafc;
+}
+
+.wallet-option.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+.secondary-button {
+  background: #e5e7eb;
+  color: #111827;
+  padding: 8px 12px;
+}
+
+.secondary-button:hover {
+  background: #d1d5db;
+}
+
+.info {
+  margin-top: 16px;
+}
+
+.info p,
+.status-box p,
+.contract-box p,
+.history-item p {
+  margin: 8px 0;
+  word-break: break-word;
+}
+
+span {
+  font-weight: 700;
+}
+
+.bid-box {
+  display: grid;
+  gap: 12px;
+}
+
+.bid-box label {
+  font-weight: 700;
+}
+
+input {
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+  font-size: 16px;
+}
+
+a {
+  color: #2563eb;
+  font-weight: 700;
+  word-break: break-word;
+}
+
+.helper-text {
+  margin: 10px 0 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.grid-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.history-list,
+.activity-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.history-item,
+.activity-item {
+  padding: 16px;
+  border-radius: 14px;
+  background: #f8fafc;
+  border: 1px solid #e5eaf0;
+}
+
+.activity-item p {
+  margin: 0 0 6px;
+  line-height: 1.5;
+}
+
+.activity-item span {
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+@media (max-width: 820px) {
+  .auction-stats,
+  .grid-two {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .auction-hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .wallet-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+}

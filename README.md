@@ -35,6 +35,15 @@ Users can connect their Freighter wallet, place a bid using testnet XLM, confirm
 7. View transaction status and transaction hash
 8. Check bid history and auction activity
 
+## Screenshot :
+<img width="766" height="620" alt="auction_overview_stats" src="https://github.com/user-attachments/assets/cbd93a3f-1494-40a0-8f3e-8c5094c80a4c" />
+
+<img width="712" height="528" alt="wallet_options_connected_balance" src="https://github.com/user-attachments/assets/4517585f-cc30-4720-982a-3fd5f371c94a" />
+
+<img width="714" height="498" alt="bid_success_history_activity" src="https://github.com/user-attachments/assets/93c61aa5-f905-4111-b339-eacffb467d48" />
+
+
+
 ## Tech Stack
 
 - React
